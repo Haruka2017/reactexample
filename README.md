@@ -9,18 +9,18 @@ $npm run setup
 
 ## Run development server on http://localhost:3000/n
 ```Shell
-```
 $npm run start
+```
 
 ## Delete sample codes and run your new starter project
 ```Shell
-```
 $npm run clean
+```
 
 ## Create new component, container, route.
 ```Shell
-```
 $npm run generate ...
+```
 
 ## Run Production Server
 ```Shell
