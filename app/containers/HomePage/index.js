@@ -16,7 +16,7 @@ import ReposList from 'components/ReposList';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
-import Input from './Input';
+import Input from '../../components/Input';
 import Section from './Section';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
