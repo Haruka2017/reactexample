@@ -19,6 +19,9 @@ import {
   LOAD_REPOS,
   LOAD_REPOS_SUCCESS,
   LOAD_REPOS_ERROR,
+  ADD_TODO,
+  SET_VISIBILITY_FILTER,
+  TOGGLE_TODO
 } from './constants';
 
 /**
@@ -60,4 +63,27 @@ export function repoLoadingError(error) {
     type: LOAD_REPOS_ERROR,
     error,
   };
+}
+
+let nextTodoId = 0
+export const addTodo = (text) => {
+  return {
+    type: ADD_TODO,
+    id: nextTodoId++,
+    text
+  }
+}
+
+export const setVisibilityFilter = (filter) => {
+  return {
+    type: SET_VISIBILITY_FILTER,
+    filter
+  }
+}
+
+export const toggleTodo = (id) => {
+  return {
+    type: TOGGLE_TODO,
+    id
+  }
 }
